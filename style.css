@@ -1,0 +1,232 @@
+#temp {
+  color: aqua;
+  text-align: center;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(to right, rgb(227, 255, 102), #fd8080);
+  -webkit-background-clip: text; /* Ensures gradient applies to text */
+  -webkit-text-fill-color: transparent; /* Makes text transparent so gradient is visible */
+  font-family: sans-serif;
+  font-weight: bold;
+  padding-left: 20px;
+}
+/* body .projecs{
+  text-align: center;
+  color: red;
+} */
+.made-easy {
+  display: flex;
+  justify-content: center;
+  font-family: sans-serif;
+  font-weight: bold;
+  background-image: linear-gradient(to right, rgb(227, 255, 102), #fd8080);
+  -webkit-background-clip: text; /* Ensures gradient applies to text */
+  -webkit-text-fill-color: transparent; /* Makes text transparent so gradient is visible */
+  font-size: 20px;
+}
+h1 {
+  font-family: sans-serif;
+  font-size: 40px;
+  text-align: center;
+  /* color:#f0f0f0 ; You can add color here if needed */
+}
+.temp {
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 20px;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  border-color: black solid 2px;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-content: flex-end;
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap; /* Enables wrapping for child elements */
+  justify-content: center; /* Centers items horizontally */
+  align-items: center; /* Centers items vertically within the container */
+  margin: auto; /* Centers the entire container itself */
+}
+
+.card1,
+.card2,
+.card3,
+.card4 {
+  display: flex;
+  margin: 20px;
+  border-radius: 20px;
+  width: 200px;
+  height: 200px;
+  background-color: red;
+}
+
+body {
+  background-image: url(https://images.unsplash.com/photo-1579547621706-1a9c79d5c9f1?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  background-repeat: no-repeat;
+  background-size: 1500px;
+  animation: fade-down 1.5s;
+  background-size: 1200px; /* This might conflict with the background-size above, so you might need to adjust one */
+  /* animation: gradient 10s infinite alternate; */
+}
+
+@keyframes fade-down {
+  0% {
+    opacity: 0%;
+    transform: translateY(50px) scale(0.9);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px) scale(1);
+  }
+}
+
+/* Additional CSS improvements for a cleaner structure */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 20px; /* You can add spacing between cards if necessary */
+
+}
+
+.card1,
+.card2,
+.card3,
+.card4 {
+  margin: 10px; /* Adjust spacing between cards */
+}
+
+.card1 {
+  background-image: url("fieldblured2.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; /* Cover the container entirely */
+  /* filter: blur(2px); Apply blur if needed */
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+/* Use hover effect for interactive visuals */
+.card1:hover {
+  background-color: rgba(
+    0,
+    0,
+    255,
+    0.5
+  ); /* Semi-transparent blue hover effect */
+  transform: translateY(10px);
+  border-radius: 20px; 
+}
+
+body {
+  background-image: url("https://images.unsplash.com/photo-1579547621706-1a9c79d5c9f1?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-repeat: no-repeat;
+  background-size: 1900px;
+  padding: 50px; /* Adjust padding for better spacing */
+  animation: fade-down 1.5s ease-out;
+}
+.card1 {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 300px;
+  background-image: url(fieldblured2.jpg);
+  background-repeat: no-repeat;
+  background-size: 150%;
+  background-size: contain; /* Makes the background cover the entire container */
+  background-position: center;
+  background-size: 400px; /* You might want to adjust this value based on the image */
+  /* filter: blur(2px); If you want to add a blur effect on the card background, remove the comment */
+}
+
+.card1:hover {
+  background-color: blue;
+  transform: translateY(-10px); 
+}
+.card2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+  font-family: sans-serif;
+  width: 300px;
+  background-color: #f0f0f0;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+.card2:hover {
+  /* margin-top: 50px;
+  padding-top: 50px;
+  background-color: blue; */
+  transform: translateY(-10px); 
+  background-color: #e1e1e1;
+  /* background-color: #f1f1f1; */
+}
+.odd-or-even {
+  text-align: center;
+}
+.odd {
+  color: red;
+}
+.or {
+  /* color: greenyellow; */
+}
+.even {
+  color: cyan;
+}
+.card3{
+  display: flex;
+  justify-content: center;
+  width: 300px;
+
+}
+.card3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+  font-family: sans-serif;
+  width: 300px;
+  background-color: #f0f0f0;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+.card3:hover {
+  /* margin-top: 50px;
+  padding-top: 50px;
+  background-color: blue; */
+  background-color: #e1e1e1;
+  transform: translateY(-10px); 
+  /* background-color: #f1f1f1; */
+}
+.drive{
+  font-family: sans-serif;
+  font-size: 20px;
+}
+.card4 {
+}
+.card4:hover {
+  /* margin-top: 50px;
+  padding-top: 50px;
+  background-color: blue; */
+  transform: translateY(-10px); 
+  /* background-color: #f1f1f1; */
+}
+.card4{
+  width:300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+  font-family: sans-serif;
+  width: 300px;
+  background-color: #f0f0f0;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+.card4:hover{
+  transform: translateY(-10px);
+  background-color: #e1e1e1;
+}
